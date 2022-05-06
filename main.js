@@ -5,7 +5,6 @@ form.addEventListener('submit', e => {
     var name1 = form['name'].value;
     var class1 = form['class'].value;
     var re1 = form['request'].value;
-    fetch(`https://api.telegram.org/bot5270203551:AAHmDszAG_3LpScU-EO6xamxV1kBuBN-tqs/sendMessage?chat_id=502916042&text=name%20:%20${name1}%0Aclass%20:%20${class1}%0Arequest%20:%20${re1}`);
     fetch(`https://api.telegram.org/bot5270203551:AAHmDszAG_3LpScU-EO6xamxV1kBuBN-tqs/sendMessage?chat_id=-737082532&text=name%20:%20${name1}%0Aclass%20:%20${class1}%0Arequest%20:%20${re1}`);
     
     e.preventDefault()
