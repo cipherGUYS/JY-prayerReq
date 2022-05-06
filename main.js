@@ -6,6 +6,7 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(() => {
         $("#form_alerts").html("<div class='alert alert-success'>Requested successfully.</div>");
+        setTimeout(() => {$("#form_alerts").html('')},2000)
         document.getElementById("pr").reset();
     })
     .catch(() => $("#form_alerts").html("<div class='alert alert-danger'>Error.</div>"))
