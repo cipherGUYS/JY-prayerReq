@@ -29,6 +29,10 @@ label {
     padding: 10px;
 }
 
+.footer{
+    text-decoration: none;
+}
+
 form, .main-box {
     background-color: rgb(146, 146, 253);
 }
