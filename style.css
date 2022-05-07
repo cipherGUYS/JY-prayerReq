@@ -1,0 +1,36 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1,
+h2,
+h6,
+label {
+    color: white;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+form, .main-box {
+    background-color: rgb(50, 50, 50);
+}
+
+@media screen and (max-width: 580px) {
+    .main-box {
+        width: 350px;
+    }
+
+    .btn {
+        width: 130px;
+    }
+}
