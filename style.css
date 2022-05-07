@@ -13,6 +13,14 @@ label {
     color: white;
 }
 
+::-moz-selection {
+    background-color: rgb(61, 138, 210);
+}
+
+::selection {
+    background-color: rgb(61, 138, 210);
+}
+
 .container {
     position: absolute;
     left: 50%;
@@ -23,6 +31,16 @@ label {
 
 form, .main-box {
     background-color: rgb(146, 146, 253);
+}
+
+.btn-send {
+    background-color: rgb(61, 138, 210);
+    color: white;
+}
+
+.btn-send:hover {
+    background-color: rgb(42, 118, 189);
+    color: white;
 }
 
 @media screen and (max-width: 580px) {
