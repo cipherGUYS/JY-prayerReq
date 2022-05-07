@@ -1,7 +1,7 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz3PNuRcDbEzlKKjfV3kYGCBqeBddyCelwOXYqPIW_oOWwo2Fzr-Kj4YmxQD0n6XLEUNQ/exec'
 const form = document.forms['prayer-request']
 env:
- token=${{ secrets.TELE_BOT }};
+  token=${{ secrets.TELE_BOT }};
 form.addEventListener('submit', e => {
     var name1 = form['name'].value;
     var year1 = form['year'].value;
