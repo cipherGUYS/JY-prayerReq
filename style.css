@@ -3,12 +3,12 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(221, 221, 249);
+    overflow: hidden;
 }
 
 h1,
 h2,
-h6,
 label {
     color: white;
 }
@@ -22,7 +22,7 @@ label {
 }
 
 form, .main-box {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(146, 146, 253);
 }
 
 @media screen and (max-width: 580px) {
