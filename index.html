@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://avatars.githubusercontent.com/u/97837242?s=400&u=c2b0ab3d8f8d473f2f71a5621a9695e9ec351b2f&v=4" rel="icon">
+    <link href="https://avatars.githubusercontent.com/u/97837242?s=400&u=c2b0ab3d8f8d473f2f71a5621a9695e9ec351b2f&v=4"
+        rel="icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <title>JY prayer request </title>
 </head>
+
 <body>
-    <div class="container py-5" >
+    <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded">
-                <h2 class="text-center fw-bold mb-3">Contact Us</h2>
+            <div class="main-box col-lg-5 col-md-8 mx-auto p-4 rounded">
+                <h2 class="text-center fw-bold mb-5">Prayer Request 🛐</h2>
                 <form name="prayer-request" id="pr">
                     <div id="form_alerts"></div>
-                    <div class="form-group mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name or type 'believer' " required>
+                    <div class="form-group mb-4">
+                        <label for="name" class="form-label">Name*</label>
+                        <input type="text" id="name" name="name" class="form-control"
+                            placeholder="Enter your name or type 'believer' " required>
                     </div>
-                    <div class="form-group mb-3">
-                        <label for="class" class="form-label">Class</label>
-                        <input type="class" id="class" name="class" class="form-control" placeholder="Enter your class" required>
+                    <div class="form-group mb-4">
+                        <label for="year" class="form-label">Year*</label>
+                        <input type="ph" id="class" name="year" class="form-control"
+                            placeholder="Enter your year of study" required>
                     </div>
-                    <div class="form-group mb-3">
-                        <label for="request" class="form-label">Request</label>
-                        <textarea id="request" name="request" class="form-control" placeholder="Enter your request or type 'personal' " rows="5" required></textarea>
+                    <div class="form-group mb-4">
+                        <label for="request" class="form-label">Request*</label>
+                        <textarea id="request" name="request" class="form-control"
+                            placeholder="Enter your request or type 'personal' " rows="5" required></textarea>
                     </div>
                     <div>
-                        <button class="btn btn-primary me-2" type="submit">Send request🙏</button>
-                        <button class="btn btn-danger" type="reset">Reset the form!</button>
+                        <div class="mt-5">
+                            <button class="btn btn-primary me-3" type="submit">Send request🙏</button>
+                            <button class="btn btn-danger" type="reset">Reset the form!</button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
+        <footer>
+            <h6 class="text-center mt-5">Powered by cipherGUYS ⚡</h6>
+        </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
